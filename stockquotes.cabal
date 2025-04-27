@@ -1,0 +1,17 @@
+cabal-version: 2.0
+
+name: stockquotes
+
+version: 0.0.1
+
+synopsis: Stockquotes processes historical stock quotes data.
+
+build-type: Simple
+
+executable stockquotes
+  hs-source-dirs: stockquotes
+  main-is: Main.hs
+  other-modules: Params QuoteData StatReport Charts HtmlReport
+  build-depends:
+    base
+  default-language: Haskell2010
